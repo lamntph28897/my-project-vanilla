@@ -1,4 +1,4 @@
-const myArr = ["Dat", "Kien", "Son"];
+const myArr = ["lam","nguyen","tien"];
 const app = document.getElementById("app");
 
 let content = "";
