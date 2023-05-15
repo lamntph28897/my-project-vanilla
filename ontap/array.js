@@ -4,6 +4,17 @@ const products = [
     { id: 2, name: "San pham B", price: 300 }, // item
     { id: 3, name: "San pham C", price: 400 }, // item
 ];
+const fiuter=products.filter(function(item){
+    return item.price<250;
+})
+const reduceTest=products.reduce(function(value,nextValue){
+    return value+=nextValue.price;
+},0)
+const findTest=products.find(function(item){
+    return item.id==3;
+})
+console.log(reduceTest)//200+300+400
+console.log(fiuter)
 const app = document.getElementById("app");
 
 // let content = "";
