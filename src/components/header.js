@@ -7,7 +7,8 @@ const Header = () => {
                     <li><a href="/">Home</a></li>
                     <li><a href="/AboutPage">About</a></li>
                     <li><a href="ProductPage">ProductPage</a></li>
-                    <li><a href="ListPage">ListPage</a></li>
+                    <li><a href="/admin/Products">AminProductPage</a></li>
+                    <li><a href="/admin/Products/add">AminProductAddPage</a></li>
                 </ul>
                 <div>2</div>
             </div>

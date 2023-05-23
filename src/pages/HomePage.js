@@ -1,11 +1,9 @@
-import Banner from "../components/banner"
 import Header from "../components/header"
 import { posts } from "../dataFake"
 
 const HomePage=()=>{
     return `<div class="container max-w-4xl mx-auto px-4">
                 ${Header()}
-                ${Banner()}
                 <div>
                     <h1 class="font-bold " >Bai viet</h1>
                     <div class="grid grid-cols-3 gap-8">
