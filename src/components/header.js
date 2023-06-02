@@ -6,7 +6,7 @@ const Header = () => {
                 <ul class="flex items-center space-x-4">
                     <li><a href="/">Home</a></li>
                     <li><a href="/AboutPage">About</a></li>
-                    <li><a href="ProductPage">ProductPage</a></li>
+                    <li><a href="/ProductPage">ProductPage</a></li>
                     <li><a href="/admin/Products">AminProductPage</a></li>
                     <li><a href="/admin/Products/add">AminProductAddPage</a></li>
                 </ul>

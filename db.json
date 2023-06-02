@@ -1,0 +1,29 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "name": "lam2 deptrai",
+      "price": "lam2"
+    },
+    {
+      "id": 6,
+      "name": "ok moi da cap nhat",
+      "price": "1000"
+    },
+    {
+      "name": "du an 5",
+      "author": "lamnt28897",
+      "id": 8
+    },
+    {
+      "id": 9,
+      "name": "san pham moi 100",
+      "price": "1000"
+    },
+    {
+      "name": "them moi ",
+      "price": "100",
+      "id": 10
+    }
+  ]
+}

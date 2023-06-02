@@ -1,10 +1,11 @@
+import axios from "axios";
 import Header from "../../components/header"
-import { products } from "../../data";
+// import { products } from "../../data";
 import { router, useEffect } from "../../utilities"
-import { v4 as uuidv4 } from 'uuid';
 
 const AdminProductAddPage = () => {
 
+    // const products=JSON.parse(localStorage.getItem('products'))|| [];  
     useEffect(()=>{
         const form=document.getElementById("form-add");
         const productName=document.getElementById("product-name");
@@ -13,13 +14,30 @@ const AdminProductAddPage = () => {
         form.addEventListener('submit',function(e){
             e.preventDefault();
             const newProduct={
-                id: uuidv4(),
                 name:productName.value,
                 price:productPrice.value,
             };
-            products.push(newProduct)
+            // fetch("http://localhost:3000/products",{
+            //     method:"POST",
+            //     headers: {
+            //         "Content-Type":"application/json",
+            //     },
+            //     body:JSON.stringify(newProduct)
+            // }).then(()=>{
+            //     router.navigate('/admin/Products') 
+            // })
+            axios.post("http://localhost:3000/products",newProduct)
+            .then(()=>{
+                router.navigate('/admin/Products') 
+            })
+            // thêm vào mảng
+            // products.push(newProduct)
 
-            router.navigate('/admin/Products')
+            //lưu lại storage
+            // localStorage.setItem('products',JSON.stringify(products))
+
+            //redirect sang admin
+            
         })
     })
 

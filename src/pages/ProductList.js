@@ -1,6 +1,18 @@
-import { products } from "../data"
+import axios from "axios";
+import { useEffect, useState } from "../utilities";
 
-const ProductList = ({}) => {
+const ProductList = () => {
+    const [products,setProducts]=useState([]);
+
+    useEffect(()=>{
+      // fetch("http://localhost:3000/products")
+      // .then((Response)=>Response.json())
+      // .then((data)=> setProducts(data))
+
+      // viết gọn hơn của thằng fetch
+      axios.get("http://localhost:3000/products").then(({data})=> setProducts(data))
+
+    },[])
 return `
 ${products.map((products)=>{
     return`
